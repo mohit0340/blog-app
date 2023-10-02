@@ -1,6 +1,7 @@
 import React, { useLayoutEffect,useEffect, useState } from 'react'
 import { Link ,useNavigate,Outlet} from 'react-router-dom'
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import Blogdata from "./Blog-data"
 
 
 const Home = () => {
@@ -24,12 +25,14 @@ const Home = () => {
 
       </div>
       </nav>
+      {/* <Blogdata></Blogdata> */}
+    
       <Outlet></Outlet>
        
       
     </div>
   )
-}
+  }
 
 export default Home
 

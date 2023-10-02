@@ -3,75 +3,91 @@
         "author": "Mohit Rathod",
         "blog_posts": [
           {
-            "type": "Blog",
+            "type": "Cooking",
             "title": "The Art of Cooking",
             "date": "2023-09-27",
             "content": "Cooking is not just a necessity; it's an art. In this blog post, we'll explore the joys of cooking and share some mouthwatering recipes.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Galaxy",
             "title": "Exploring the Cosmos",
             "date": "2023-09-26",
             "content": "Join us on a journey through the vast cosmos. In this post, we'll delve into the mysteries of space and the latest discoveries in astronomy.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Travel",
             "title": "Hiking Adventures",
             "date": "2023-09-25",
             "content": "Get ready for thrilling hiking adventures! We'll take you to some of the most breathtaking trails and share tips for a safe and enjoyable hike.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Finance",
             "title": "Financial Planning 101",
             "date": "2023-09-24",
             "content": "Learn the basics of financial planning and secure your financial future. This blog post covers budgeting, saving, and investing strategies.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Art",
             "title": "The World of Art",
             "date": "2023-09-23",
             "content": "Art is a window to the soul. Join us as we explore different art forms, famous artists, and the impact of art on society.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Health",
             "title": "Healthy Living Tips",
             "date": "2023-09-22",
             "content": "Maintaining a healthy lifestyle is essential. Discover practical tips for staying fit, eating well, and reducing stress in this blog post.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Technology",
             "title": "The Power of Technology",
             "date": "2023-09-21",
             "content": "Technology is reshaping the world. This post explores the latest tech trends, innovations, and their impact on our lives.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Travel",
             "title": "Traveling on a Budget",
             "date": "2023-09-20",
             "content": "Travel doesn't have to break the bank. Learn how to travel on a budget, find affordable destinations, and make the most of your trips.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Health",
             "title": "Environmental Conservation",
             "date": "2023-09-19",
             "content": "Protecting our environment is crucial. Explore sustainable practices, conservation efforts, and ways to reduce your carbon footprint.",
             "comments": []
           },
           {
-            "type": "Blog",
+            "type": "Books",
             "title": "The World of Books",
             "date": "2023-09-18",
             "content": "Books open doors to new worlds. Dive into the realm of literature, discover great authors, and find your next favorite book.",
             "comments": []
+          },
+          {
+            "type": "Health",
+            "title": "Healthy Eating Tips",
+            "date": "2023-09-27",
+            "content": "Maintaining a balanced diet is essential for good health. In this blog post, we'll share practical tips for making healthier food choices and improving your overall well-being.",
+            "comments": []
+          },
+          {
+            "type": "Health",
+            "title": "The Benefits of Fitness and Exercise",
+            "date": "2023-09-26",
+            "content": "Regular exercise is key to a healthy lifestyle. This post explores the numerous benefits of staying active, including improved physical and mental health, and offers tips on incorporating exercise into your daily routine.",
+            "comments": []
           }
+          
+          
         ]
       }
       

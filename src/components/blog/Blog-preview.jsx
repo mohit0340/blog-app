@@ -9,18 +9,20 @@ import { addcomment } from '../../services/Blog-slice';
 
 const Blogpreview = () => {
   const params=useParams("")
-  const state= useSelector(state=>state.blog[0].blog_posts[params.id])
+  const state= useSelector(state=>(state.blog[0].blog_posts).filter((val)=>{
+   return params.id.includes(val.title)
+  }))
+  console.log(state[0])
   // console.log(state)
   const navigate=useNavigate()
   const dispatch= useDispatch()
   const [email,setEmail]=useState("")
   // const [blogdata,setBlogdata]=useState(userdata);
   const [comment,setComment]=useState("")
-  
 
 
   const handlecomment=()=>{
-    console.log(email,comment)
+
     if(email=="" || comment==""){
       toast.error("Please Enter Data in All Field")
 
@@ -47,14 +49,17 @@ const Blogpreview = () => {
 
   return (
     <div className=' bg-dark-subtle rounded pt-2 mt-3 p-2'>
+      {/* {
+        state!=""?( */}
+          <>
     
       <h2 className='pt-2'>Blog Preview</h2>
     <div className='mt-5 w-100 bg-black d-flex justify-content-between text-light rounded p-4 ' style={{height:"90px"}}>
-      <p className=' fw-semibold fs-3 ' >{state.title}</p>
-      <p className='pt-2'>Date : {state.date}</p>
+      <p className=' fw-semibold fs-3 ' >{state[0].title}</p>
+      <p className='pt-2'>Date : {state[0].date}</p>
     </div>
     <div className='mt-5 w-100 bg-black text-start text-light rounded p-3 mb-3'>
-      <div className='fs-5' >{state.content}</div>
+      <div className='fs-5' >{state[0].content}</div>
     </div>
     <div className='mt-5 w-100 bg-black d-flex gap-2 flex-column text-start text-light rounded p-3 mb-3' style={{height:"300px"}}>
       <h2>Add Comment</h2>
@@ -70,9 +75,9 @@ const Blogpreview = () => {
     </div>
     <div  className='mt-5 w-100 bg-black text-start text-light rounded p-3 mb-3'>
       <h2>Comments</h2>
-    {state!=undefined?<div className='d-flex flex-column gap-2'>
+    {state[0].comments!=undefined?<div className='d-flex flex-column gap-2'>
       {
-        state.comments.map((item,index)=>(
+        state[0].comments.map((item,index)=>(
           <div key={index}  className='width-100 rounded-2 p-2 height-25 bg-primary-subtle text-black'>
             <p className='fs-6 d-flex'><AccountCircleRoundedIcon></AccountCircleRoundedIcon>{item.username}</p>
           <p className='fs-5 ps-3'>{item.data}</p>
@@ -82,7 +87,8 @@ const Blogpreview = () => {
         }</div>
    :null}
     </div>
-
+    </>
+{/*  */}
     
 
     </div>

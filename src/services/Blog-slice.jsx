@@ -9,7 +9,11 @@ const Blogslice=createSlice({
     initialState:Data.user, 
     reducers:{
         addcomment:(state,action)=>{
-            state[0].blog_posts[action.payload.id].comments.unshift(action.payload.data)
+           let a= state[0].blog_posts.filter((val)=>{
+              return  val.title.includes(action.payload.id)
+
+            })
+            a[0].comments.unshift(action.payload.data)
 
         },
         addblog:(state,action)=>{
